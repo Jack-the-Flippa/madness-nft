@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import React, {useState, useContext} from 'react'
 import MadnessBros from "./artifacts/contracts/MadnessBros.sol/MadnessBros.json"
 import { AccountContext } from '../context';
-const contractAddr = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+const contractAddr = "0xC50f061Be6Be625bF20C3DcF5C135530713268F2"
 
 function Mint(props) {
 
