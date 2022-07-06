@@ -51,19 +51,7 @@ function MyApp({ Component, pageProps }) {
       });
     }
 
-    useEffect(() => {
-      const connectWalletOnPageLoad = async () => {
-        if (localStorage.getItem('isWalletConnected') !== undefined)
-          try {
-            let myAccount = localStorage.getItem('isWalletConnected')
-            setAccount(myAccount)
-          } catch (ex) {
-            console.log(ex)
-          }
-        
-      }
-      connectWalletOnPageLoad()
-    }, [])
+    
 
     
 
@@ -105,7 +93,7 @@ function MyApp({ Component, pageProps }) {
             </div>
             <div className="flex mt-10 flex-col font-semibold items-center">
               <div className="mb-8 w-56">
-                
+                <Image alt="logo" src={gudetama}></Image>
               </div>
               <span>Copyright 2022 - The Degen Collective</span>
             </div>
