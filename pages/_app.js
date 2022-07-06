@@ -105,7 +105,7 @@ function MyApp({ Component, pageProps }) {
             </div>
             <div className="flex mt-10 flex-col font-semibold items-center">
               <div className="mb-8 w-56">
-                <Image alt="logo" src={gudetama}></Image>
+                
               </div>
               <span>Copyright 2022 - The Degen Collective</span>
             </div>
