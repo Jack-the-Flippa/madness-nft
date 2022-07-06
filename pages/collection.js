@@ -34,7 +34,7 @@ export default function Collection() {
             let json = await data.json()
             let item = {
                 tokenId: tokenId.toNumber(),
-                tokenImage: json.image.slice(7),
+                tokenImage: json.image,
                 tokenMetaData: json.attributes,
             }
             return item
