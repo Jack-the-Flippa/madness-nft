@@ -22,9 +22,8 @@ export default function Collection() {
         const connection = await web3Modal.connect()
         const provider = new ethers.providers.Web3Provider(connection)
         const signer = provider.getSigner()
-
         const contract = new ethers.Contract(contractAddress, MadnessBros.abi, signer)
-        const userBalance = 3
+        const userBalance = await contract.balanceOf(account)
         const userArray = []
         for (let i = 0; i < userBalance; i++){userArray.push(i)}
 
